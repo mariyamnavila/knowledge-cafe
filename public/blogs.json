@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "cover": "https://i.postimg.cc/rptZxgmd/cover1.jpg",
+        "title": "Mastering JavaScript in 30 Days",
+        "author": "John Doe",
+        "author_img": "https://i.postimg.cc/KcKSQ7H5/face1.jpg",
+        "posted_date": "2025-08-01",
+        "reading_time": 5,
+        "hashtags": [
+            "#javascript",
+            "#webdevelopment",
+            "#programming"
+        ]
+    },
+    {
+        "id": 2,
+        "cover": "https://i.postimg.cc/bN9h2yMX/cover2.jpg",
+        "title": "The Future of AI in Daily Life",
+        "author": "Jane Smith",
+        "author_img": "https://i.postimg.cc/QNRLz9LZ/face2.jpg",
+        "posted_date": "2025-07-28",
+        "reading_time": 7,
+        "hashtags": [
+            "#ai",
+            "#technology",
+            "#future"
+        ]
+    },
+    {
+        "id": 3,
+        "cover": "https://i.ibb.co.com/ycBrtw33/cover3.jpg",
+        "title": "10 Tips for Better UI/UX Design",
+        "author": "Emily Chen",
+        "author_img": "https://i.postimg.cc/nM811fwN/face3.jpg",
+        "posted_date": "2025-07-30",
+        "reading_time": 4,
+        "hashtags": [
+            "#uiux",
+            "#designtips",
+            "#creativity"
+        ]
+    },
+    {
+        "id": 4,
+        "cover": "https://i.ibb.co.com/KpKtTqZ3/cover4.jpg",
+        "title": "How to Build REST APIs with Node.js",
+        "author": "Michael Lee",
+        "author_img": "https://i.postimg.cc/3Rc1dvj8/face4.jpg",
+        "posted_date": "2025-08-02",
+        "reading_time": 6,
+        "hashtags": [
+            "#nodejs",
+            "#backend",
+            "#api"
+        ]
+    },
+    {
+        "id": 5,
+        "cover": "https://i.postimg.cc/QdvW9Jwn/greg-rakozy-o-Mp-Az-DN-9-I-unsplash.jpg",
+        "title": "Top 5 VS Code Extensions for Developers",
+        "author": "Sara Khan",
+        "author_img": "https://i.postimg.cc/cJTXGjr8/face5.jpg",
+        "posted_date": "2025-07-31",
+        "reading_time": 3,
+        "hashtags": [
+            "#vscode",
+            "#developertools",
+            "#productivity"
+        ]
+    }
+]
