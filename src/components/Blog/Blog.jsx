@@ -1,9 +1,9 @@
+import { FaRegBookmark } from "react-icons/fa";
 
-
-const Blog = ({ blog }) => {
-    const { title, cover, author, author_img, posted_date, reading_time,hashtags } = blog;
+const Blog = ({ blog, handleAddToBookmark }) => {
+    const { title, cover, author, author_img, posted_date, reading_time, hashtags } = blog;
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 mb-16">
             <img className="w-[900px] h-[628px] mb-8 rounded-lg" src={cover} alt={`cover picture of ${title}`} />
             <div className="flex justify-between items-center">
                 <div className="flex">
@@ -13,13 +13,17 @@ const Blog = ({ blog }) => {
                         <p className="text-gray-700">{posted_date}</p>
                     </div>
                 </div>
-                <div>
-                    <span className="text-gray-700">{reading_time} Min read</span>
+                <div className="flex justify-center items-center ">
+                    <span className="text-gray-700 ">{reading_time} Min read</span>
+                    <button
+                        onClick={handleAddToBookmark}
+                        className="ml-2 text-2xl "
+                    ><FaRegBookmark /></button>
                 </div>
             </div>
             <h2 className="text-4xl font-bold">{title}</h2>
             <p className="text-gray-700">{
-            hashtags.map((hash,idx)=><span key={idx}><a href="">{hash}  </a></span>)
+                hashtags.map((hash, idx) => <span key={idx}><a href="">{hash}  </a></span>)
             }</p>
         </div>
     );
