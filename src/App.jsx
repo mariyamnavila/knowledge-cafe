@@ -5,18 +5,20 @@ import Bookmarks from './components/Bookmarks/Bookmarks'
 import Header from './components/Header/Header'
 
 function App() {
-  const [bookmarks,setBookmark] = useState([]);
+  const [bookmarks,setBookmarks] = useState([]);
   const [readingTime,setReadingTime] = useState(0)
 
   const handleAddToBookmark = (blog) => {
     const newBookmark = [...bookmarks,blog];
-    setBookmark(newBookmark)
+    setBookmarks(newBookmark)
     
   }
 
-  const handleMarkAsRead = (time) =>{
+  const handleMarkAsRead = (id,time) =>{
     const newReadingTime = readingTime + time;
     setReadingTime(newReadingTime);
+    const remainingBookmarks = bookmarks.filter(bookmark=>bookmark.id !== id);
+    setBookmarks(remainingBookmarks)
   }
 
   return (
